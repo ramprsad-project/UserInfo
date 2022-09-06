@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Create User</h1>
+  <table >
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>FilePath</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="fname" name="fname" #fname></td>
+      <td><input type="text" id="lname" name="lname" #lname></td>
+      <td><input type="text" id="fpath" name="fpath" #fpath></td>
+    </tr>
+  </table>
+  <button type="button" (click)="create(fname.value,lname.value,fpath.value)">Save</button>
+</div>
